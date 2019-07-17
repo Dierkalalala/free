@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+<body>
+
+    <div class="consultation-wrapper">
+        <span class="close-consultation" onclick="closeOrderForm()">×</span>
+        <div class="consultation-box">
+            <h2>Регистрация на оказание услуг</h2>
+            <div class="textbox">
+                <input class="" type="text" placeholder="username">
+            </div>
+            <div class="textbox">
+                <input type="text" placeholder="email">
+            </div>
+            <div class="textbox">
+                <input type="text" placeholder="phone number">
+            </div>
+            <input type="button" class="input-btn" value="Получить консультацию">
+        </div>
+    </div>
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>s
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__contacts">
+                    <a class="header_phone" href="#">+38 (096) 309 21 45 </a>
+                    <a class="header_email" href="#">layout585@gmail.com</a>
+                    <a class="header_btn" href="#consultation">Бесплатная консультация </a>
+                </div>
+            </div>
+        </div>
+        <div class="header_content">
+            <div class="container">
+                <div class="flex">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="media/logo.png" alt="">
+                        </a>
+                    </div>
+                    <nav class="menu">
+                        <ul>
+                            <li class="li_active"><a href="#">Главная</a></li>
+                            <li><a href="#">О компании </a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="slider">
+        <div class="container">
+            <div class="slider__inner">
+                <div class="slider__item active__slide">
+                    <div class="slider__title">
+                        КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
+                    </div>
+                    <div class="slider__text">
+                        Полное прекращение существования юридического лица с сохранением легальности всей предыдущей деятельности.
+                    </div>
+                    <div class="default-btn" onclick="showOrderForm()">
+                        Оставить заявку
+                    </div>
+                </div>
+                <div class="slider__item">
+                        <div class="slider__title">
+                            КОМПЛЕКСНОЕ ЗАКРЫТИЕ
+                        </div>
+                        <div class="slider__text">
+                            Полное прекращение существования юридического лица с сохранением легальности всей предыдущей деятельности.
+                        </div>
+                        <div class="default-btn" onclick="showOrderForm()">
+                            Оставить заявку
+                        </div>
+                </div>
+                        <div class="slider__item">
+                            <div class="slider__title">
+                                КОМПЛЕКСНОЕ
+                            </div>
+                            <div class="slider__text">
+                                Полное прекращение существования юридического лица с сохранением легальности всей предыдущей деятельности.
+                            </div>
+                            <div class="slider__btn default-btn" onclick="showOrderForm()">
+                                Оставить заявку
+                            </div>
+
+                        </div>
+
+
+        </div>
+            <div class="slider__left-btn" onclick="prevSlide()"></div>
+            <div class="slider__right-btn" onclick="nextSlide()"></div>
+        </div>
+
+    </section>
+
+    <main>
+        <section class="about">
+            <div class="container">
+                <div class="about__top">
+                    <div class="about__top-title-box">
+                        <div class="about__top-title">
+                            Наши Услуги
+                        </div>
+                        <div class="about__top-text">
+                            Комплексный подход к вашему вопросу, своевременная правовую помощь, представление интересов во всех судебных инстанциях.
+                        </div>
+                    </div>
+                    <div class="about__top-button">
+                        Показать все услуги
+                    </div>
+                </div>
+
+                <div class="about__items">
+                    <div class="about__item">
+                        <img class="about__img" src="media/about-item1.png" alt="">
+                        <div class="about__item-title">
+                            Банкротство и ликвидация
+                        </div>
+                        <div class="about__item-text">
+                            Полное прекращение существования юридического лица с сохранением легальности всей предыдущей деятельности
+                        </div>
+                        <div class="about__item-btn-group">
+                            <a class="about__item-btn-more">
+                                Подробнее
+                            </a>
+                            <a
+                                    class="default-btn about__item-btn">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <img class="about__img" src="media/about-item2.png" alt="">
+                        <div class="about__item-title">
+                            Адвокатское сопровождение
+                        </div>
+                        <div class="about__item-text">
+                            Мы гарантируем полное профессиональное обслуживание клиентов в заявленных сферах деятельности и соблюдение
+                            конфиденциальности.
+                        </div>
+                        <div class="about__item-btn-group">
+                            <a class="about__item-btn-more">
+                                Подробнее
+                            </a>
+                            <a
+                                    class="default-btn about__item-btn">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <img class="about__img" src="media/about-item3.png" alt="">
+                        <div class="about__item-title">
+                            Налоговый аудит
+                        </div>
+                        <div class="about__item-text">
+                            Налоговый аудит проводят перед проведением налоговых проверок; при оценке возможных налоговых рисков; при оптимизации налогообложения.
+                        </div>
+                        <div class="about__item-btn-group">
+                            <a class="about__item-btn-more">
+                                Подробнее
+                            </a>
+                            <a
+
+                                    class="default-btn about__item-btn">
+                                Заказать
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="company">
+            <div class="company__inner">
+                <div class="container">
+                    <div class="company__title">
+                        О компании
+                    </div>
+                    <div class="company__text">
+                        Компания специализируется на оказании услуг в сфере корпоративного права, налогового консалтинга, представительства в судах, ликвидации и банкротства предприятий. На сегодняшний день, коллектив компании объединяет
+                        высокопрофессиональных экспертов имеющих
+                        специализации в отдельных областях права.
+                    </div>
+                    <div class="default-btn">
+                        Узнать больше
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="consult" id="consultation">
+            <div class="container">
+                <div class="form__inner">
+                <div class="consult__top">
+                    <div class="consult__top-title">
+                        Получить Консультацию
+                    </div>
+                    <div class="consult__top-text">
+                        Комплексный подход к вашему вопросу, своевременная правовую помощь, представление интересов во всех судебных инстанциях.
+                    </div>
+                </div>
+                <div class="consult__form">
+
+
+                            <form action="">
+                                <div class="form__box">
+                                    <div class="form__box-left">
+                                        <label>
+                                            <div class="form__box-title">
+                                            E-mail
+                                            </div>
+                                            <input type="text">
+                                        </label>
+                                        <label>
+                                            <div class="form__box-title">
+                                           Контактный телефон
+                                            </div>
+                                            <input type="text">
+                                        </label>
+                                        <label>
+                                            <div class="form__box-title">
+                                            ФИО
+                                            </div>
+                                            <input type="text">
+                                        </label>
+                                        <label>
+                                            <div class="form__box-title">
+                                           Тема вопроса
+                                            </div>
+                                            <select>
+                                                <option value="">#</option>
+                                                <option value="">#</option>
+                                                <option value="">#</option>
+                                            </select>
+                                        </label>
+                                    </div>
+                                    <div class="form__box-right">
+                                        <label>
+                                            <div class="form__box-title">
+                                            Сообщение
+                                            </div>
+                                            <textarea></textarea>
+                                        </label>
+                                        <div class="default-btn get__consult" onclick="showOrderForm(1)">
+                                            Получить консультацию
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="advantages__inner">
+                <div class="container">
+                    <div class="advantages__items">
+                        <div class="advantages__item">
+                            <div class="advantages__item-check">
+
+                            </div>
+                            <div class="advantages__item-title">
+                                Десятки добровольных ликвидаций ежемесячно
+                            </div>
+                            <div class="advantages__item-text">
+                                Мы умеем минимизировать все риски в процессе добровольной ликвидации юридических лиц.
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__item-check">
+
+                            </div>
+                            <div class="advantages__item-title">
+                                Отличное знание законов в сфере банкротства
+                            </div>
+                            <div class="advantages__item-text">
+                                Позволяют нам эффективно отстаивать как интересы кредиторов, так и интересы собственников проблемной организации.                    </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__item-check">
+
+                            </div>
+                            <div class="advantages__item-title">
+                                Большой опыт сопровождения банкротства                            </div>
+                            <div class="advantages__item-text">
+                                Мы обладаем большим опытом сопровождения процедур банкротства предприятий.                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news">
+            <div class="container">
+                <div class="news__top">
+                    <div class="news__top-titlebox">
+                        <div class="news__top-title">
+                            Новости Компании
+                        </div>
+                        <div class="news__top-text">
+                            Комплексный подход к вашему вопросу, своевременная правовую помощь, представление интересов во всех судебных инстанциях.
+                        </div>
+
+                    </div>
+                    <div class="news__top-btn">
+                        Показать все услуги
+                    </div>
+                </div>
+                <div class="news__content">
+                    <div class="news__item1">
+                        <div class="news__item1-inner">
+                            <div class="news__sign"></div>
+                            <div class="news__title">
+                                Банкротство и ликвидация предприятия в Украине
+                            </div>
+                            <div class="news__text">
+                                «На сегодняшний день, коллектив компании объединяет высокопрофессиональных экспертов имеющих специализации в отдельных областях права. На сегодняшний день, коллектив компании объединяет высокопрофессиональных экспертов имеющих специализации в отдельных областях права. На сегодняшний день, коллектив компании объединяет высокопрофессиональных экспертов имеющих специализации в отдельных областях права...»
+                            </div>
+                            <div class="news_author">
+                                Андрей Ворошилов, генеральный директор компании Bankom
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__item2">
+                        <div class="news__image">
+                            <div class="news__date">
+                                <div>03.04</div>
+                            </div>
+                        </div>
+                        <div class="news__item2-title">
+                            Новость компании
+                        </div>
+                        <div class="news__item2-text">
+                            На сегодняшний день, коллектив компании объединяет высокопрофессиональных экспертов имеющих специализации в отдельных областях права...»
+                        </div>
+                    </div>
+                    <div class="news__item2">
+                        <div class="news__image2">
+                            <div class="news__date">
+                                <div>03.04</div>
+                            </div>
+                        </div>
+                        <div class="news__item2-title">
+                            Новость компании
+                        </div>
+                        <div class="news__item2-text">
+                            На сегодняшний день, коллектив компании объединяет высокопрофессиональных экспертов имеющих специализации в отдельных областях права...»
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="news__btn-box">
+                    <div class="news__left-btn"></div>
+                    <div class="news__right-btn"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="white_line"></div>
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="container">
+                <div class="footer__top">
+                    <div class="footer__data">
+                        <div class="footer__data-title">
+                            Комплексное закрытие предприятия
+                        </div>
+                        <div class="footer__data-text">
+                            Полное прекращение существования юридического лица с сохранением легальности всей предыдущей деятельности.
+                        </div>
+                        <a class="footer__data-btn" href="#consultation">
+                            Бесплатная консультация
+                        </a>
+                        <div class="footer__data-phone">
+                            +38 (096) 309 21 45
+                        </div>
+                        <div class="footer__data-email">
+                            layout585@gmail.com
+                        </div>
+                        <div class="footer__data-map">
+                            Киев, ул.Пушиной, 13
+                        </div>
+                    </div>
+                    <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5412.16918899575!2d-0.2094228671111792!3d51.51703911570061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876101ec7b258ad%3A0x3647c74c778696da!2sGraffik+Gallery+London!5e0!3m2!1sru!2s!4v1563074003137!5m2!1sru!2s" width="633" height="252" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    </div>
+
+             </div>
+        </div>
+        <div class="footer__copyright">
+            <div class="copyright">
+                © 2017 Template by Anastasia Shaposhnyk. Все права защищены.
+            </div>
+        </div>
+    </footer>
+    <script src="script/main.js"></script>
+</body>
+</html>
